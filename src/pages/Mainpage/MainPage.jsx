@@ -1,9 +1,14 @@
 import React from 'react'
+import MainBanner from '../../components/MainBanner'
+import Navbar from '../../components/Navbar'
+import Performance from '../../components/Performance'
 
 function MainPage() {
   return (
     <div>
-        h2ll
+        <Navbar/> 
+        <MainBanner/>
+        <Performance/>
     </div>
   )
 }

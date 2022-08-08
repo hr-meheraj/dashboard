@@ -27,3 +27,34 @@ html {
 .drawer-button{
   z-index: 2039399 !important
 }
+
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 156, 156, 0.842);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Main Banner */
+.main-banner{
+  margin-top: 20px;
+  background-image:linear-gradient(230deg, rgba(89, 67, 208,0.6), rgba(75, 53, 194,0.7)) ,url('./assets/car.png');
+  background-position: right;
+  background-size: cover;
+}
