@@ -12,17 +12,20 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
-.active {
+a.active, a:active {
   background-color: #F5F6F7 !important;
-  color: #0D0A19;
+  color: #0D0A19 !important;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275)   0.3s;
   font-weight: 700;
   font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 45px;
+   display: flex;
+  /* justify-content: space-between;  */
+  /* padding: 15px 45px; */
   width: 244px;
   border-radius: 10px;
 }
+
+
 
 .drawer-button{
   z-index: 2039399 !important
