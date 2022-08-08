@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import MainPage from "./pages/Mainpage/MainPage";
-
 function App() {
   return (
     <div className="max-w-[1440px] mx-auto">

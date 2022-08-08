@@ -58,3 +58,17 @@ html {
   background-position: right;
   background-size: cover;
 }
+
+
+.common{
+  color:#0D0A19;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.common-gray-light {
+  color: #9A9EA7;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}

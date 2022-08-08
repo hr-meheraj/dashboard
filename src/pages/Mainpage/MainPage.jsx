@@ -3,6 +3,7 @@ import MainBanner from '../../components/MainBanner'
 import Navbar from '../../components/Navbar'
 import Performance from '../../components/Performance'
 import PerformanceSecond from '../../components/PerformanceSecond'
+import Footer from '../../components/shared/Footer'
 
 function MainPage() {
   return (
@@ -11,6 +12,7 @@ function MainPage() {
         <MainBanner/>
         <Performance/>
         <PerformanceSecond/>
+        <Footer/>
     </div>
   )
 }
