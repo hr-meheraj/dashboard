@@ -1,6 +1,14 @@
 import React from 'react'
+import ViewsCard from './ViewsCard'
 
 function AuctionsPerformacne() {
+    
+    const data = [
+        { imgURL: 'https://i.ibb.co/BCnNgCq/logo-dashboard-3.png', bids: "12,6k", views: "12,600", titleOne: "2013 Subaru Forester ", titleTwo: "Premium Plus" },
+        { imgURL: 'https://i.ibb.co/S5fwpM0/Untitled-design-2.png', bids: "10,5k", views: "13,890", titleOne: "Used 2010 BMW X3 ", titleTwo: "Sport package" },
+        { imgURL: 'https://i.ibb.co/Z6njyWW/Untitled-design-3.png', bids: "5,9k", views: "10,950", titleOne: "2016 Toyota ", titleTwo: "BRZ" },
+    ]
+
     return (
         <div className='mb-[100px]'>
             {/* Title */}
@@ -16,22 +24,10 @@ function AuctionsPerformacne() {
             </div>
 
             {/* Details Card */}
-            <div className='grid grid-cols-12 gap-5 mx-auto w-[95%]'>
-                <div className="col-span-7 flex gap-3">
-                    <img className=' rounded-[4px] w-[56px] h-[44px]' src="https://i.ibb.co/BCnNgCq/logo-dashboard-3.png" alt="car"/>
-                    <p className='text-[#0d0a19] text-[14px] font-normal'>2013 Subaru Forester <br/> Premium Plus</p>
-                </div>
-
-                <div className="col-span-5 grid gap-4 grid-cols-2">
-                    <div className="flex flex-col items-center gap-2">
-                        <h3 className='text-[14px] font-bold text-[#0D0A19]'>12,600</h3>
-                        <p className=' text-[#9A9EA7] text-[12px]'>Views</p>
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                        <h3 className='text-[14px] font-bold text-[#0D0A19]'>12,6k</h3>
-                        <p className=' text-[#9A9EA7] text-[12px]'>Last Bid</p>
-                    </div>
-                </div>
+            <div className='grid grid-cols-1 gap-4'>
+                {
+                    data.map(eachData => <ViewsCard {...eachData} />)
+                }
             </div>
         </div>
     )
