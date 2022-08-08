@@ -13,7 +13,7 @@ function UpcomingAuctions() {
         <div>
             {/* Title */}
             <div className="flex justify-between my-4 items-center">
-                <h2 className='font-bold text-[16px] text-[#0D0A19]'>Upcoming auctions</h2>
+                <h2 className='font-bold text-[16px] text-[#0D0A19] ml-[10px]'>Upcoming auctions</h2>
 
                 <div className='text-[#9A9EA7] flex gap-2 text-[12px] font-bold '>
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
